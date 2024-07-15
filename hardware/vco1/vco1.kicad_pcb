@@ -42,7 +42,7 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
+			(layerselection 0x0001330_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -72,11 +72,11 @@
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 4)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "/home/dmcguire/Source/eurorack/vco-1/docs/")
 		)
 	)
 	(net 0 "")
@@ -4160,7 +4160,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=5mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor")
 		(property "Reference" "C9"
-			(at 4.253113 2.032 360)
+			(at 4.253113 2.032 0)
 			(layer "F.SilkS")
 			(uuid "9f9ea46a-4723-452d-8bf4-d292cea37605")
 			(effects
@@ -4171,7 +4171,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 1.25 3.75 360)
+			(at 1.25 3.75 0)
 			(layer "F.Fab")
 			(uuid "179b3956-ad8e-4243-89ec-c94e3475dcd7")
 			(effects
@@ -5479,7 +5479,7 @@
 			(uuid "0e4935c8-8bdc-48f4-a16b-c5a079d2c3a2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 360)
+			(at 1.25 0 0)
 			(layer "F.Fab")
 			(uuid "0fd921d0-6d6c-4db8-b639-ecf6da0e3ad7")
 			(effects
@@ -7837,7 +7837,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=5mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor")
 		(property "Reference" "C8"
-			(at -1.524 -2.5 360)
+			(at -1.524 -2.5 0)
 			(layer "F.SilkS")
 			(uuid "04aa9114-2988-47ab-a95a-9d7b681a0eb9")
 			(effects
@@ -7848,7 +7848,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 1.25 3.75 360)
+			(at 1.25 3.75 0)
 			(layer "F.Fab")
 			(uuid "6a2933e1-11dc-48e7-b066-8c33424b118b")
 			(effects
@@ -9156,7 +9156,7 @@
 			(uuid "e22488e9-0461-457a-9171-5b7359f93481")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 360)
+			(at 1.25 0 0)
 			(layer "F.Fab")
 			(uuid "ba45eea5-f59d-4b7c-8d45-a4e0643a61ed")
 			(effects
@@ -17461,7 +17461,7 @@
 		(descr "Resistor, Axial_DIN0204 series, Axial, Vertical, pin pitch=2.54mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Vertical pin pitch 2.54mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R27"
-			(at 5.284 0 360)
+			(at 5.284 0 0)
 			(layer "F.SilkS")
 			(uuid "fd9d47fe-da8b-4ecc-86c1-fd31114bb976")
 			(effects
@@ -17472,7 +17472,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 1.27 1.92 360)
+			(at 1.27 1.92 0)
 			(layer "F.Fab")
 			(uuid "29093de5-9227-41b4-859a-f5f394ae954e")
 			(effects
@@ -17609,7 +17609,7 @@
 			(uuid "c75b77aa-63df-4acc-941a-180a14ee0dd3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 -1.92 360)
+			(at 1.27 -1.92 0)
 			(layer "F.Fab")
 			(uuid "2695ac86-8143-4bd1-a7a5-f7bc30adcb36")
 			(effects
@@ -23413,6 +23413,18 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "c6006975-7d0c-468c-810b-dccf62108b62")
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 183.642 109.728 0)
+		(layer "B.SilkS")
+		(uuid "00e5f9d4-334b-407e-824e-f8552af4b28b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(gr_text "PWM CV"
 		(at 186.182 75.692 0)
