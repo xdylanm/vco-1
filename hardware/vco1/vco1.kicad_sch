@@ -4362,6 +4362,12 @@
 		(uuid "69372f29-805e-4940-9358-1a44c2489281")
 	)
 	(junction
+		(at 64.77 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a1711bc-eede-4f56-a95a-6cbd38f47b6d")
+	)
+	(junction
 		(at 21.59 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4404,6 +4410,12 @@
 		(uuid "903f9c24-e7f8-4dea-85fd-4784f88b80da")
 	)
 	(junction
+		(at 66.04 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94043d6a-cd83-4a69-bbf5-7f0d441dab20")
+	)
+	(junction
 		(at 119.38 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4420,6 +4432,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9eabdfcc-2efb-4cb7-814a-367453f28b81")
+	)
+	(junction
+		(at 52.07 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9edc0e8d-3864-4f28-bdbe-2b14a8880976")
 	)
 	(junction
 		(at 93.98 143.51)
@@ -5293,6 +5311,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 30.48) (xy 66.04 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b55a0a4-032f-4273-967e-138ddd730ae3")
+	)
+	(wire
+		(pts
 			(xy 218.44 41.91) (xy 217.17 41.91)
 		)
 		(stroke
@@ -5760,6 +5788,16 @@
 			(type default)
 		)
 		(uuid "6df48119-1760-497f-9d30-e4caa674543b")
+	)
+	(wire
+		(pts
+			(xy 52.07 148.59) (xy 64.77 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "703d4da1-e9c7-4132-b7b9-1a5a5a0c5e8a")
 	)
 	(wire
 		(pts
@@ -6503,6 +6541,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 148.59) (xy 52.07 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4328174-a295-46f9-820b-e0516cfd8383")
+	)
+	(wire
+		(pts
 			(xy 21.59 158.75) (xy 34.29 158.75)
 		)
 		(stroke
@@ -6750,6 +6798,16 @@
 			(type default)
 		)
 		(uuid "c4b5c395-6f1b-4192-bea9-e306c9946129")
+	)
+	(wire
+		(pts
+			(xy 64.77 148.59) (xy 77.47 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c61bfd53-ac44-4ee1-a565-409b916e6ad7")
 	)
 	(wire
 		(pts
@@ -7641,6 +7699,72 @@
 			(project "vco1"
 				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07f9137c-f741-49a7-ac77-1fae0d31f8c2")
+		(property "Reference" "#PWR042"
+			(at 52.07 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61cfc99e-2cab-41cf-b216-310bb57c4f13")
+		)
+		(instances
+			(project "vco1"
+				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -9038,7 +9162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 144.78 24.13 0)
 			(effects
 				(font
@@ -9103,7 +9227,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 100.33 48.26 0)
 			(effects
 				(font
@@ -9629,6 +9753,74 @@
 			(project "vco1"
 				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 64.77 148.59 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3843826f-2c02-4169-9f90-67f358d0ea8d")
+		(property "Reference" "TP6"
+			(at 67.31 144.0179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 67.31 146.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 59.69 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 64.77 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66edfe85-6ceb-4be8-8c83-6083bd76f68e")
+		)
+		(instances
+			(project "vco1"
+				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -10557,6 +10749,74 @@
 			(project "vco1"
 				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
 					(reference "RV4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 77.47 148.59 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "578213d1-25dc-42db-8c86-b1ea53e57df2")
+		(property "Reference" "TP7"
+			(at 80.01 144.0179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.01 146.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 72.39 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 77.47 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfb3fe01-7be3-4f8c-8257-dcd2c56819e2")
+		)
+		(instances
+			(project "vco1"
+				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -12143,6 +12403,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 30.48 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84bd88d2-b4d6-45db-b9e2-edd8c3c9a563")
+		(property "Reference" "TP8"
+			(at 68.58 25.9079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 68.58 28.4479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 60.96 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 66.04 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9cd37fe2-64d7-4200-9c37-32b978b73ddb")
+		)
+		(instances
+			(project "vco1"
+				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 231.14 158.75 0)
 		(unit 1)
@@ -12614,7 +12942,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 189.23 40.64 0)
 			(effects
 				(font
@@ -14117,7 +14445,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 83.82 87.63 0)
 			(effects
 				(font
@@ -14693,6 +15021,74 @@
 			(project "vco1"
 				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 52.07 148.59 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6ca18e2-ff0a-4162-a652-9aeb10e9f5ee")
+		(property "Reference" "TP5"
+			(at 54.61 144.0179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 54.61 146.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 46.99 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 52.07 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa572e84-f026-4f03-a25d-1f936afb880b")
+		)
+		(instances
+			(project "vco1"
+				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
+					(reference "TP5")
 					(unit 1)
 				)
 			)
