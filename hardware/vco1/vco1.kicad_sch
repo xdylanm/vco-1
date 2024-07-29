@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Sawtooth Core VCO")
-		(date "2024-07-09")
-		(rev "1")
+		(date "2024-07-26")
+		(rev "1.1")
 		(company "idyllm")
 		(comment 1 "CC BY-SA 4.0")
 		(comment 2 "Credit: Moritz Klein")
@@ -4404,6 +4404,12 @@
 		(uuid "85184b2e-22b2-4496-b233-7193ce6531c6")
 	)
 	(junction
+		(at 246.38 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86ed76d0-7243-481e-a8b3-4146977a3055")
+	)
+	(junction
 		(at 257.81 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4540,6 +4546,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2bc9947-e1db-4ed2-a08d-c93404c597d0")
+	)
+	(junction
+		(at 226.06 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "faf80114-1094-44d9-baee-e235f8bac448")
 	)
 	(junction
 		(at 261.62 129.54)
@@ -5221,6 +5233,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 96.52) (xy 232.41 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35a2e4e1-400e-49cc-80d2-5108ddc24a46")
+	)
+	(wire
+		(pts
 			(xy 194.31 44.45) (xy 201.93 44.45)
 		)
 		(stroke
@@ -5751,6 +5773,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 96.52) (xy 226.06 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a48e9a9-36f3-41b1-b31c-e22ab7ac55af")
+	)
+	(wire
+		(pts
 			(xy 160.02 127) (xy 162.56 127)
 		)
 		(stroke
@@ -5878,6 +5910,16 @@
 			(type default)
 		)
 		(uuid "74e833b5-a488-4ed0-b03f-6c3c20fd8964")
+	)
+	(wire
+		(pts
+			(xy 240.03 96.52) (xy 246.38 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74f04d3d-abc2-4254-bb5c-4e408b8083ce")
 	)
 	(wire
 		(pts
@@ -6361,6 +6403,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 19.05) (xy 128.27 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3b55db1-2a86-4da3-b185-3f5386d8ed8c")
+	)
+	(wire
+		(pts
 			(xy 31.75 66.04) (xy 35.56 66.04)
 		)
 		(stroke
@@ -6841,7 +6893,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 104.14) (xy 226.06 101.6)
+			(xy 226.06 106.68) (xy 226.06 105.41)
 		)
 		(stroke
 			(width 0)
@@ -7018,6 +7070,16 @@
 			(type default)
 		)
 		(uuid "da6424b2-9ba1-4fb1-b9df-ec25c2dc721b")
+	)
+	(wire
+		(pts
+			(xy 246.38 96.52) (xy 246.38 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db2e0a8b-0f07-4dd7-bb7a-27f773a41fa7")
 	)
 	(wire
 		(pts
@@ -7271,7 +7333,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 93.98) (xy 226.06 91.44)
+			(xy 226.06 97.79) (xy 226.06 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7338,6 +7400,25 @@
 			(type default)
 		)
 		(uuid "fe46d568-d9c5-407f-abb3-917dd81ea303")
+	)
+	(text_box "Note: TP2 requires a high Z probe input (>100MOhm) for measurement. Use TP9 for a buffered signal."
+		(exclude_from_sim no)
+		(at 68.58 35.56 0)
+		(size 33.02 10.16)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1043b25c-e1e3-4991-8612-d04745cdfe53")
 	)
 	(text "TRIANGLE OUT"
 		(exclude_from_sim no)
@@ -14298,7 +14379,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "68k"
 			(at 212.09 114.3 90)
 			(effects
 				(font
@@ -15249,7 +15330,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "82k"
 			(at 232.41 50.7999 0)
 			(effects
 				(font
@@ -15712,16 +15793,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 226.06 97.79 180)
+		(at 226.06 101.6 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c6e41035-6513-4bdf-b7b1-483b516588a3")
 		(property "Reference" "R4"
-			(at 228.6 96.5199 0)
+			(at 223.52 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15730,7 +15811,7 @@
 			)
 		)
 		(property "Value" "47k"
-			(at 228.6 99.0599 0)
+			(at 223.52 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15739,7 +15820,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
-			(at 225.044 97.536 90)
+			(at 227.076 101.346 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15748,7 +15829,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 226.06 97.79 0)
+			(at 226.06 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15757,7 +15838,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 226.06 97.79 0)
+			(at 226.06 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16169,6 +16250,74 @@
 			(project "vco1"
 				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
 					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 128.27 19.05 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4194404-cb87-4fd7-890a-945f300c0c30")
+		(property "Reference" "TP9"
+			(at 130.81 14.4779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 130.81 17.0179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 123.19 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a33db8c8-e225-44c4-88fa-7672dfd91b5b")
+		)
+		(instances
+			(project "vco1"
+				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -16831,8 +16980,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 236.22 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4ca4926-66ef-4f3b-bc4d-816b195c6ae4")
+		(property "Reference" "C13"
+			(at 236.22 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22p"
+			(at 236.22 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+			(at 240.03 95.5548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92a17d6c-a489-494b-a8e1-7c9eb5494768")
+		)
+		(pin "2"
+			(uuid "26f8c516-a165-44ad-844c-6555a02d40b7")
+		)
+		(instances
+			(project "vco1"
+				(path "/2e954017-059f-458a-b10a-31dfd5ac2991"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 226.06 104.14 0)
+		(at 226.06 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16841,7 +17057,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9109e74-cd26-4e66-b244-11893a830385")
 		(property "Reference" "#PWR05"
-			(at 226.06 110.49 0)
+			(at 226.06 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16850,7 +17066,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 226.06 109.22 0)
+			(at 226.06 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16858,7 +17074,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 104.14 0)
+			(at 226.06 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16867,7 +17083,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 104.14 0)
+			(at 226.06 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16876,7 +17092,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 226.06 104.14 0)
+			(at 226.06 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)

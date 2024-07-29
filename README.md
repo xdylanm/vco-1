@@ -54,11 +54,38 @@ To set the low end of the range, the network including R19, R20, and RV3 is used
 
 * Adjust the offset with the coarse tuning pot such that the base of the NPN is biased to $V_{BE,0}$ when the input CV is 0V. 
 
+## Assembly and Test
 
+### 1. Power
 
- 
+* Populate the power input and filtering components at the bus connector. Verify the orientation of the polarity protection diodes D2 and D3.
+* Connect the board to power and verify voltage levels.
 
+### 2. Oscillator Core, Saw and Pulse Outputs
 
+* Populate the input network (coarse adjust, fine adjust, CV and FM). Note that the board-edge pots (RV2 and RV6) must have their leads trimmed flush with the bottom of the board so that the mono jacks mount flush. Install the pots first and jacks later.
+* Populate the transistors Q1 and Q2, socket and 40106 inverter (U1), diode D1 and capacitor C1.
+* Populate the socket and TL074 op amp (U2) and the components for the pulse and saw outputs. This is required to generated a buffered signal from the oscillator core at TP9 (or after the DC block at TP3)
+* Tune the oscillator (16Hz for a 0V input on CV, 32Hz for 1V, etc.) by adjusting RV1 and RV3. RV1 sets the gain of the voltage divider and should be adjust such that a 1V difference results in a frequency doubling. Next, adjust RV3 to set the base frequency. There is some coupling between the resistive networks, so iteration is required.
+* Check the levels for the Saw and Pulse outputs (confirm ~10Vpp). Check the PWM adjustment and confirm a full range of pulse widths.
+
+### 3. Triangle Output
+
+* Populate the discrete components (watch the orientation on diodes D4 and D5) and the socket and TL074 op amp (U3). Populate the last jack.
+* Power on the board and check the Triangle output. Adjust RV7 to balance the triangle (it won't be perfect at all frequencies; there is a short spike at the transition).
+
+## Changes
+
+#### V1.1.20240726
+
+* Added additional test points, fixed test point pad to fit standard 0.1" header pins
+* R14 to 82k (not tested; pulse out Vpp measured at 8.5V with 68k)
+* Added C13 to remove spike in saw output
+* R26 to 68k to fix level for triangle output range (now 9.6Vpp)
+
+#### V1.0.20240714
+
+Original PCB
 
 ## References
 
